@@ -1,0 +1,331 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Langar;
+	list-style-type: none;
+	text-decoration: none;
+}
+/*css start -----------------------------------*/
+.out{
+	width: 100%;
+	background-image: linear-gradient(to bottom, #400b6e, #8210e6, #0b8fbf);
+	padding: 50px 0;
+}
+a{
+	color: white;
+}
+/*header css ----------------------------------------------*/
+/*header,h1, ul,li{
+	border: 1px solid red;
+}*/
+header{
+	color: white;
+	display: flex;
+	background-color: #400b6e;
+	height: 50px;
+	z-index: 9;
+	position: fixed;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+header h1{
+	letter-spacing: 7px;
+	margin-left: 20px;
+	cursor: pointer;
+	font-size: 2.8em;
+}
+header h1 span:nth-child(1){
+	animation-name: satu;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+header h1 span:nth-child(2){
+	animation-name: dua;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+header h1 span:nth-child(3){
+	animation-name: tiga;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+header h1 span:nth-child(4){
+	animation-name: empat;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+header h1 span:nth-child(5){
+	animation-name: lima;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+@keyframes dua{
+	0%{
+		color: black;
+	}
+	20%{
+		color: white;
+	}
+	40%{
+		color: red;
+	}
+	60%{
+		color: yellow;
+	}
+	80%{
+		color: green;
+	}
+	100%{
+		color: blue;
+	}
+}
+@keyframes satu{
+	0%{
+		color: white;
+	}
+	20%{
+		color: red;
+	}
+	40%{
+		color: yellow;
+	}
+	60%{
+		color: green;
+	}
+	80%{
+		color: blue;
+	}
+	100%{
+		color: black
+	}
+}
+@keyframes tiga{
+	0%{
+		color: blue;
+	}
+	20%{
+		color: black;
+	}
+	40%{
+		color: white;
+	}
+	60%{
+		color: red;
+	}
+	80%{
+		color: yellow;
+	}
+	100%{
+		color: green;
+	}
+}
+@keyframes empat{
+	0%{
+		color: green;
+	}
+	20%{
+		color: blue;
+	}
+	40%{
+		color: black;
+	}
+	60%{
+		color: white;
+	}
+	80%{
+		color: red;
+	}
+	100%{
+		color: yellow;
+	}
+}
+@keyframes lima{
+	0%{
+		color: yellow;
+	}
+	20%{
+		color: green;
+	}
+	40%{
+		color: blue;
+	}
+	60%{
+		color: black;
+	}
+	80%{
+		color: white;
+	}
+	100%{
+		color: red;
+	}
+}
+
+
+.header-list ul{
+	display: flex;
+	height: 30px;
+	margin-right: 20px;
+}
+.header-list ul li{
+	width: 100px;
+	text-align: center;
+	line-height: 30px;
+}
+.header-list ul li:nth-child(n+5){
+	border-radius: 20px;
+	margin-left: 15px;
+	background-color: #7017bd;
+}
+.header-list ul li:nth-child(-n+6):hover{
+	background-image: linear-gradient(to bottom, #400b6e, #a955f2);
+	border-radius: 20px;
+}
+.header-list ul li:nth-child(n+5):hover{
+	background-color: #935bf5;
+	cursor: pointer;
+}
+/*main css --------------------------------------------*/
+main{
+	overflow: hidden;
+	margin-bottom: 100px;
+	display: flex;
+	color: white;
+	width: 100%;
+}
+main img{
+	height: 500px;
+	width: 500px;
+}
+main .main-text{
+	width: 100%;
+}
+.main-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation-name: mainside;
+	animation-duration: 2s;
+	animation-direction: reverse;
+	position: relative;
+}
+.main-last{
+	text-align: center;
+	letter-spacing: 1px;
+}
+@keyframes mainside{
+	from{
+		right: 0;left: 0;
+	}
+	to{
+		left: 800px;
+	}
+}
+.main-last h1{
+	font-size: 50px;
+	letter-spacing: 5px;
+}
+main button{
+	font-weight: bold;
+	background-color: #f51df1;
+	width: 100px;
+	height: 30px;
+	margin: 20px 0;
+	outline: none;
+	color: white;
+	border-radius: 3px;
+}
+/*about css ----------------------------------------*/
+.about{
+	display: flex;
+	width: 100%;
+	color: black;
+}
+.about h1{
+	font-size: 30px;
+	color: white;
+	margin-left: 34px;
+}
+.about img{
+	width: 300px;
+	height: 300px;
+}
+.about-text .text{
+	margin: 30px 0 0 90px;
+	width: 70%;
+	letter-spacing: 2px;
+}
+.text h4{
+	margin-top: 50px;
+	border: 3px solid black;
+	display: inline-block;
+	padding: 5px 10px;
+	letter-spacing: 5px;
+}
+.text h4:hover{
+	border: 3px solid white;
+	cursor: pointer;
+}
+/*css product-item --------------------------------------*/
+.product{
+	width: 100%;
+	padding-bottom: 30px;
+}
+.product h1{
+	margin: 20px 50px;
+}
+.product-item{
+	display: flex;
+	justify-content: space-evenly;
+}
+.product-item > div{
+	width: 20%;
+	border: 3px solid black;
+	text-align: center;
+}
+.product-item >div h4{
+	border: 3px solid grey;
+	margin: 20px 0;
+	color: grey;
+	padding: 5px 10px;
+	display: inline-block;
+}
+.product-item >div h4:hover{
+	border: 3px solid black;
+	cursor: pointer;
+}
+.product-item > div img{
+	width: 100%;
+	height: 150px;
+}
+.product-item > div h3{
+	margin: 10px 0;
+}
+/*css footer --------------------------*/
+.footer{
+	width: 100%;
+	display: flex;
+	height: 100px;
+	background-color: grey;
+}
+.footer h1{
+	width: 30%;
+	letter-spacing: 7px;
+	line-height: 100px;
+	margin-left: 100px;
+}
+.footer-text{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.footer-text p:last-child{
+	font-size: 10px;
+}
